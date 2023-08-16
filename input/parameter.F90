@@ -1,7 +1,4 @@
-##parameters##
-pi=3.14159565
-deg=65 !degrees
-lat=(deg*pi)/180
+lat=1.134464014
 h=0.1
 r_max=1
 k_N=0.1
@@ -12,7 +9,7 @@ N_0=0.99
 Z_0=0.01
 S_N_ext=0
 g_max=0.5
-I_v =sqrt(1.2)
+I_v=sqrt(1.2)
 l_ZN=0.01
 l_ZD=0.02
 l_D=0

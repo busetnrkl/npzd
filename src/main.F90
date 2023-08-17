@@ -1,10 +1,12 @@
 PROGRAM main
-        
+
+        use euler
+        use lengthofday
         use nutrients
         use pythoplankton
         use zooplankton
         use detritus
-        use lengthofday
+        
 
         implicit none
         real:: r_max, k_N, l_PN, l_PD, a_mix, S_N_ext
@@ -42,7 +44,9 @@ PROGRAM main
                 theta_minus=1.0
         endif
         write(15,*) i,n_cur,p_cur,z_cur,d_cur
-
+        open(unit=1,file="../output/data.txt")
+        write(1,*) i,n_cur,p_cur,z_cur,d_cur
+        
         call calc_nutrients(r_max,t_day,k_N,l_PN,l_ZN,l_DN,p_cur, & 
                 z_cur,d_cur,n_cur,S_N_ext,a_mix,theta_minus,&
                 theta_plus,Z_0,P_0,h,n_next)
@@ -60,6 +64,7 @@ PROGRAM main
         d_cur=d_next
 
         end do 
+        close(1)
 END PROGRAM main
 
 

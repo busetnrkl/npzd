@@ -10,4 +10,4 @@ main: $(OBJ)
 	$(FC) -o ../bin/$@ $(OBJ) 
 
 clean: #cleans all the old compilation files
-	@rm -f *.mod *.o main
+	@rm -f *.mod *.o ../bin/main

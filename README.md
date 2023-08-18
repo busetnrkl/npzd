@@ -70,8 +70,22 @@ $$
 |$threshday$|75|starting day for the production of pythoplankton|
 |$end{\textunderscore}time$|365|number of days for which the cycle is plotted|
 
-###Plotting
-[NPZD-py.pdf](https://github.com/busetnrkl/npzd/files/12379091/NPZD-py.pdf)
+### Code
+To clone the repository, use:
+```
+code
+```
+In order to use the package, you can run the following commands in Linux:
+- Go to the `~npzd/src` folder
+- Run `make` to compile the code as `main` in  `~npzd/bin`
+- Run `./main` in `~npzd/bin` to execute
+- The output file will be saved as `data.txt` in `~npzd/output`
+- Command `vi data.txt` in this folder to view the data
+
+
+### Plotting
+
+![plot](https://github.com/busetnrkl/npzd/assets/142319799/bd6f21e3-967f-4331-9ea6-5a4e5c2675db)
 
 
 

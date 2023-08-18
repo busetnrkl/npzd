@@ -73,8 +73,9 @@ $$
 ### Code
 To clone the repository, use:
 ```
-code
+git clone https://github.com/busetnrkl/npzd.git
 ```
+
 In order to use the package, you can run the following commands in Linux:
 - Go to the `~npzd/src` folder
 - Run `make` to compile the code as `main` in  `~npzd/bin`
@@ -84,6 +85,7 @@ In order to use the package, you can run the following commands in Linux:
 
 
 ### Plotting
+You can plot the data in `data.txt` using the Python codes in the `postprocessing` file. Using the parameters above, the following plot is obtained:
 
 ![plot](https://github.com/busetnrkl/npzd/assets/142319799/bd6f21e3-967f-4331-9ea6-5a4e5c2675db)
 

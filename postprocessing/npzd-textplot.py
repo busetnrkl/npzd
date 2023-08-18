@@ -61,6 +61,9 @@ plt.plot(time,n)
 plt.plot(time,p)
 plt.plot(time,z)
 plt.plot(time,d)
-
+plt.title("NPZ cycle in upper box - D cycle in lower box")
+plt.xlabel("Time (days)")
+plt.ylabel("NPZD")
+# plt.savefig("plot.jpg")
 
 fileHandle.close()

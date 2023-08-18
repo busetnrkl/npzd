@@ -3,13 +3,13 @@
 ### Introduction
 ---
 - A Fortran package to model the yearly cycles of nutrients, pythoplankton, zooplankton and detritus in a box-like system. The model was developed according to the descriptions and equations in "Introduction to the Modelling of Marine Ecosystems"[^1].
-- to be continued
+- The limiting nutrients is denoted as D, the bulk phytoplankton as P, the bulk zooplankton as Z and the bulk detritus as D.
 
 &nbsp;
 
 ### Calculations
 ---
-The following differential equations are solved:
+The following differential equations are solved for our model:
 
 **Our Set of Differential Equations**
 
@@ -99,7 +99,7 @@ In order to use the package, you can run the following commands in Linux:
 - The output file will be saved as `data.txt` in `~npzd/output`
 - Command `vi data.txt` in this folder to view the data
   
-The code will look as follows:
+The commands will look as follows:
 ```
 cd npzd/src
 make clean
@@ -116,7 +116,7 @@ vi data.txt
 
 ### Plotting
 ---
-- You can plot the data in `data.txt` using the Python codes in the `postprocessing` file. Using the parameters above, the following plot is obtained:
+- You can plot the data in `data.txt` using the respective Python codes in the `postprocessing` folder. Using the parameters above, the following plot is obtained:
 
 ![plot](https://github.com/busetnrkl/npzd/assets/142319799/9cc3b9ca-356b-4615-bd8b-6871f3fb4f02)
 

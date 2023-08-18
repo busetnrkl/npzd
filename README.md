@@ -1,5 +1,5 @@
 ### A Simple NPZD Model
-- A Fortran package to model the seasonal cycles of nutrients, pythoplankton, zooplankton and detritus. The model was developed according to the descriptions and equations in "Introduction to the Modelling of Marine Ecosystems"[^1].
+- A Fortran package to model the yearly cycles of nutrients, pythoplankton, zooplankton and detritus in a box-like system. The model was developed according to the descriptions and equations in "Introduction to the Modelling of Marine Ecosystems"[^1].
 - to be continued
 
 
@@ -89,6 +89,6 @@ You can plot the data in `data.txt` using the Python codes in the `postprocessin
 
 ![plot](https://github.com/busetnrkl/npzd/assets/142319799/bd6f21e3-967f-4331-9ea6-5a4e5c2675db)
 
-
+The pythoplanktom blooming occurs around day 75, following the sudden decrease in the nutrients. The increase in the pythoplanktons 
 
 [^1]: Fennel, W., & Neumann, T. (2014). Introduction to the modelling of marine ecosystems. Elsevier.

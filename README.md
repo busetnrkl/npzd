@@ -95,7 +95,7 @@ git clone https://github.com/busetnrkl/npzd.git
 In order to use the package, you can run the following commands in Linux:
 - Go to the `~npzd/src` folder
 - Run `make` to compile the code as `main` in  `~npzd/bin`
-- Run `./main` in `~npzd/bin` to execute
+- Execute as `./main` in `~npzd/bin` 
 - The output file will be saved as `data.txt` in `~npzd/output`
 - Command `vi data.txt` in this folder to view the data
   

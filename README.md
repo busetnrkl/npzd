@@ -1,9 +1,16 @@
-### A Simple NPZD Model
+## A Simple NPZD Model
+
+### Introduction
+---
 - A Fortran package to model the yearly cycles of nutrients, pythoplankton, zooplankton and detritus in a box-like system. The model was developed according to the descriptions and equations in "Introduction to the Modelling of Marine Ecosystems"[^1].
 - to be continued
 
+&nbsp;
 
 ### Calculations
+---
+The following differential equations are solved:
+
 **Our Set of Differential Equations**
 
 $$
@@ -44,9 +51,12 @@ $$
 \end{flalign}
 $$
 
+&nbsp;
+
 
 ### Variables
-The following set of variables are used to solve the above equations. They can also be seen in `/input/parameters1.txt `
+---
+The following set of variables are used to solve the above equations. They can also be seen in `/input/parameter1.txt `
 | Variables | Value | Description |
 |--- |--- | --- |
 | $lat $| 1.134464014 |  latitude|
@@ -71,7 +81,12 @@ The following set of variables are used to solve the above equations. They can a
 |$threshday$|75|starting day for the production of pythoplankton|
 |$end{\textunderscore}time$|365|number of days for which the cycle is plotted|
 
+
+&nbsp;
+
+
 ### Code
+---
 To clone the repository, use:
 ```
 git clone https://github.com/busetnrkl/npzd.git
@@ -97,8 +112,10 @@ cd output
 vi data.txt
 ```
 
+&nbsp;
 
 ### Plotting
+---
 - You can plot the data in `data.txt` using the Python codes in the `postprocessing` file. Using the parameters above, the following plot is obtained:
 
 ![plot](https://github.com/busetnrkl/npzd/assets/142319799/9cc3b9ca-356b-4615-bd8b-6871f3fb4f02)
@@ -107,6 +124,6 @@ vi data.txt
 - The pythoplankton blooming occurs around day 75, following the sudden decrease in the nutrients.
 - The increase in the pythoplankton causes a noticeable increase in zooplankton after day 140. This increase in zooplankton is followed by a continuous decrease in pythoplankton until the end of the year.
 - The number of zooplankton increase until day 275, when the mixing of layers start to occur in winter. Here, the detritus is seen to mix with the nutrients, bringing the nutrient level closer to its initial value at the beginning of the year
-- (It should be noted that the cycle takes place in the Northern Hemisphere).
+- It should be noted that the cycle takes place in the Northern Hemisphere.
 
 [^1]: Fennel, W., & Neumann, T. (2014). Introduction to the modelling of marine ecosystems. Elsevier.

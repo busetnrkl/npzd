@@ -62,6 +62,8 @@ plt.plot(time,p)
 plt.plot(time,z)
 plt.plot(time,d)
 plt.title("NPZ cycle in upper box - D cycle in lower box")
+legend_drawn_flag = True
+plt.legend(["N", "P","Z","D"], loc=0, frameon=legend_drawn_flag)
 plt.xlabel("Time (days)")
 plt.ylabel("NPZD")
 # plt.savefig("plot.jpg")

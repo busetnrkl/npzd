@@ -45,7 +45,8 @@ $$
 $$
 
 
-
+### Variables
+The following set of variables are used to solve the above equations. They can also be seen in `/input/parameters1.txt `
 | Variables | Value | Description |
 |--- |--- | --- |
 | $lat $| 1.134464014 |  latitude|
@@ -82,13 +83,30 @@ In order to use the package, you can run the following commands in Linux:
 - Run `./main` in `~npzd/bin` to execute
 - The output file will be saved as `data.txt` in `~npzd/output`
 - Command `vi data.txt` in this folder to view the data
+  
+The code will look as follows:
+```
+cd npzd/src
+make clean
+make
+cd ..
+cd bin
+./main
+cd ..
+cd output
+vi data.txt
+```
 
 
 ### Plotting
-You can plot the data in `data.txt` using the Python codes in the `postprocessing` file. Using the parameters above, the following plot is obtained:
+- You can plot the data in `data.txt` using the Python codes in the `postprocessing` file. Using the parameters above, the following plot is obtained:
 
-![plot](https://github.com/busetnrkl/npzd/assets/142319799/bd6f21e3-967f-4331-9ea6-5a4e5c2675db)
+![plot](https://github.com/busetnrkl/npzd/assets/142319799/9cc3b9ca-356b-4615-bd8b-6871f3fb4f02)
 
-The pythoplanktom blooming occurs around day 75, following the sudden decrease in the nutrients. The increase in the pythoplanktons 
+
+- The pythoplankton blooming occurs around day 75, following the sudden decrease in the nutrients.
+- The increase in the pythoplankton causes a noticeable increase in zooplankton after day 140. This increase in zooplankton is followed by a continuous decrease in pythoplankton until the end of the year.
+- The number of zooplankton increase until day 275, when the mixing of layers start to occur in winter. Here, the detritus is seen to mix with the nutrients, bringing the nutrient level closer to its initial value at the beginning of the year
+- (It should be noted that the cycle takes place in the Northern Hemisphere).
 
 [^1]: Fennel, W., & Neumann, T. (2014). Introduction to the modelling of marine ecosystems. Elsevier.

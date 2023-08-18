@@ -18,12 +18,13 @@ PROGRAM main
         real:: n_cur, p_cur, z_cur, d_cur, lat
         real:: n_next, p_next, z_next, d_next, A_mix_calc
         integer:: end_time, threshday,i 
-        character(*),parameter:: filename="/home/buse/npzd/input/parameter.txt"
-
+        character(*),parameter:: filename="/home/buse/npzd/input/parameter1.txt"
+        
+        namelist /namelist_name/lat, h, r_max, k_N, l_PN, l_PD, a_mix, N_0, Z_0, &
+               S_N_ext, g_max, I_v, l_ZN, l_ZD, l_D, P_0, &
+               D_0, S_D_ext, l_DN, threshday, end_time 
         open(unit=1,file=filename)
-        read(1,*)lat,h,r_max,k_N,l_PN,l_PD,a_mix,N_0,Z_0
-        read(1,*)S_N_ext,g_max,I_v,l_ZN,l_ZD,l_D,P_0
-        read(1,*)D_0,S_D_ext,l_DN,threshday,end_time
+        read(unit=1,nml=namelist_name)
        
 
         call calc_lengthofday(threshday*1.0,lat,delta_d0)

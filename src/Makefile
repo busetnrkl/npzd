@@ -4,10 +4,10 @@ OBJ=${SRC:.f90=.o}
 
 
 %.o: %.f90
-	$(FC) -o $@ -c $<
+	$(FC) -o $@ -c $< 
 
 main: $(OBJ)
-	$(FC) -o $@ $(OBJ) 
+	$(FC) -o ../bin/$@ $(OBJ) 
 
 clean: #cleans all the old compilation files
-	@rm -f *.mod *.o maths
+	@rm -f *.mod *.o main

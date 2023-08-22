@@ -118,7 +118,8 @@ vi data.txt
 ---
 - You can plot the data in `data.txt` using the respective Python codes in the `postprocessing` folder. Using the parameters above, the following plot is obtained:
 
-![plot](https://github.com/busetnrkl/npzd/assets/142319799/9cc3b9ca-356b-4615-bd8b-6871f3fb4f02)
+![plot](https://github.com/busetnrkl/npzd/assets/142319799/4be4a91e-3380-4a41-978b-bf60354cf247)
+
 
 
 - The pythoplankton blooming occurs around day 75, following the sudden decrease in the nutrients.

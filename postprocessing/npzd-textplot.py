@@ -66,6 +66,6 @@ legend_drawn_flag = True
 plt.legend(["N", "P","Z","D"], loc=0, frameon=legend_drawn_flag)
 plt.xlabel("Time (days)")
 plt.ylabel("NPZD")
-# plt.savefig("plot.jpg")
+# plt.savefig("plot.jpg",dpi=300)
 
 fileHandle.close()

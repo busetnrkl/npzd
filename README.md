@@ -59,7 +59,7 @@ $$
 The following set of variables are used to solve the above equations. They can also be seen in `/input/parameter1.txt `
 | Variables | Value | Description |
 |--- |--- | --- |
-| $lat $| 1.134464014 |  latitude|
+| $lat $| 65 |  latitude (in degrees, needs to be converted to radians)|
 |$h$|0.1|step in the euler function|
 |$r_{max}$|1|maximum rate|
 |$k_N$|0.1|half-saturation constant|
